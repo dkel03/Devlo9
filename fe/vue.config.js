@@ -1,8 +1,10 @@
 module.exports = {
-  'devServer': {
-    'disableHostCheck': true
-  },
-  'transpileDependencies': [
-    'vuetify'
-  ]
+ devServer: {
+     proxy: {
+         '/': {
+             target: 'http://3.87.242.206/:3000/',
+             changeOrigin: true
+         }
+     }
+ }
 }
