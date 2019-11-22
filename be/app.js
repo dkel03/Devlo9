@@ -16,7 +16,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '../fe', 'dist')));
+app.use(express.static(path.join(__dirname, 'public')));
 if (process.env.NODE_ENV !== 'production'){
   app.use(cors()); // 8080과 3000이 같이 구동되기 위해 필요
 }
