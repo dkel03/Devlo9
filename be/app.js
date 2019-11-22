@@ -45,6 +45,6 @@ mongoose.connect(cfg.dbUrl, { useNewUrlParser: true, useUnifiedTopology: true, u
 });
 
 //mode log 
-console.log(`${process.env.NODE_ENV} started!`); //export NODE_ENV=production or NODE_ENV=development
+console.log(`${process.env.NODE_ENV} in ${process.env.PORT} started!`); //export NODE_ENV=production or NODE_ENV=development
 
 module.exports = app;
